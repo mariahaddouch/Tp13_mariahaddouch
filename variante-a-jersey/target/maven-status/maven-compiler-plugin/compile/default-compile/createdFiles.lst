@@ -1,0 +1,4 @@
+ma\rest\jersey\config\JerseyConfig.class
+ma\rest\jersey\config\JpaManager.class
+ma\rest\jersey\resource\ItemResource.class
+ma\rest\jersey\resource\CategoryResource.class

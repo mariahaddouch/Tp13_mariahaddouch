@@ -1,0 +1,5 @@
+ma\rest\springmvc\repository\CategoryRepository.class
+ma\rest\springmvc\repository\ItemRepository.class
+ma\rest\springmvc\VarianteCApplication.class
+ma\rest\springmvc\controller\ItemController.class
+ma\rest\springmvc\controller\CategoryController.class

@@ -1,0 +1,25 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'spring-boot-actuator'
+    metrics_path: /actuator/prometheus
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['host.docker.internal:8080']
+        labels:
+          application: 'variante-c-mvc'
+      - targets: ['host.docker.internal:8081']
+        labels:
+          application: 'variante-d-datarest'
+
+  - job_name: 'jersey-jmx'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['host.docker.internal:9404']
+        labels:
+          application: 'variante-a-jersey'
